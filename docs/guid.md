@@ -1,5 +1,5 @@
 
-##Using Create React App
+## Using Create React App
 
 Webpack을 이용하여 처음부터 React 프로젝트를 진행할수도 있지만, 이는 시간이 많이 걸린다. 하지만 다행히 Facebook에서 이를 도와줄 공식 도구를 Realese하였다.
 
@@ -12,7 +12,7 @@ Create React App은 React의 작업환경을 쉽게 설정하고 만들어주는
 - yarn start
 ````
 
-###Yarn Command Line
+## Yarn Command Line
 
 Yarn은 프로젝트의 새로운 프로젝트 생성 부터 의존성 관리와 더 많은 것들까지 다양한 측면을 관리 할 수 있는데 도움이 되는 많은 커맨드 라인 명령어들을 제공한다. 가장 인기 있는 명령어는 아래 설명 되어 있지만, 고급 명령에 대한 것은 Yarn의 공식 문서를 참조하기 바란다.
 
@@ -36,7 +36,7 @@ $ yarn init
 }
 ````
 
-##Delete unnecessary files && folders
+## Delete unnecessary files && folders
 Create React App으로 Project를 만들게 되면 나의 Project를 진행할 때 필요가 없는 몇가지 폴더들과 파일들이 있다.
 필요 없으니 삭제하는게 좋지만, 하지 않아도 진행하는데 큰 문제는 없다.
 또한, Directory 전체 구조가 변경되었으므로 import 부분의 수정이 필요하다.
@@ -64,7 +64,7 @@ Create React App으로 Project를 만들게 되면 나의 Project를 진행할 �
     - .env
 ````
     
-##NODE PATH 적용
+## NODE PATH 적용
 위에 index.js파일을 살펴보자. App파일을 불러오는데, 상대경로를 사용하여 파일을 불러오는 중이다. Director구조가 조금만 복잡해지면 다른 파일들을 import할 때 굉장히 번거로워진다. 이를 해결하기 위해 Node Path를 적용시켜 절대경로를 사용하면, 프로젝트를 진행하기 수월해진다. 이를 적용하는 것은 간단하다.
 
 이렇게 되면, 이후 파일을 import할 때 src폴더가 기준이 된다. 전체 프로젝트에서 import를 한 부분을 수정해보도록 하자.
@@ -75,7 +75,7 @@ Create React App으로 Project를 만들게 되면 나의 Project를 진행할 �
   NODE_PATH=src 
 ````
 
-##필요한 라이브러리 설치
+## 필요한 라이브러리 설치
 초기 프로덕션 의존성(production dependencies) 과 개발 의존성(development dependencies)을 설치한다. 개발 의존성은 개발 단계에서만 사용되는 의존 라이브러리이며, 프로덕션 의존성은 배포 단계에서 사용되는 라이브러리를 말한다.
 
 ````
@@ -103,7 +103,7 @@ $ yarn add babel-core babel-loader babel-preset-env babel-preset-react babel-pre
 ## Babel 설정
 최상위 디렉터리 webpack-for-react에 바벨 설정 파일을 만든다.
 ````
-touch .babelrc
+touch .babelrcBabel 설정
 .babelrc 파일을 열어 아래 코드를 추가한다.
 
 {
@@ -146,7 +146,7 @@ module.exports = {
 
 
 
-##React Router 적용
+## React Router 적용
 
 React Router는 Web, React Native, 심지어 VR에서도 사용 가능한 멋진 routing 라이브러리이다. React는 기본적으로 SPA(Single Page Application)을 위한 라이브러리인데, SPA의 문제점은 프로젝트의 규모가 커진다면 Javascript file이 커지므로 렌더링시간이 오래 걸린다는 것이다. 이를 해결하기 위해 React에 Routing기능을 적용시키는 것이다. 설치 방법은 간단하다.
 
@@ -167,7 +167,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 설치한 react-router-dom에서 BrowserRouter을 불러와 우리 App에 적용시켰다. 이제 Routing 기능을 사용할 수 있다. 차후 Redux를 사용할 경우 BrowserRoter대신, import { Provider } from ‘react-redux’ 같은 기능을 설치하고 사용하면 된다.
 
 
-##Redux
+## Redux
 
 Redux(https://deminoth.github.io/redux/)는 리액트 앱의 효과적인 상태관리를 위한 라이브러리입니다. 
 package.json을 확인하면 추가된 것을 확인할 수 있다.
