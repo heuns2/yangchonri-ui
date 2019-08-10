@@ -4,7 +4,7 @@ class Product extends React.Component {
     render(){
         return (
             <div>
-                <div>bbbbdxsdssdsdsdsdsdsdsbbbb</div>
+                <div>login</div>
             </div>
         );
     }

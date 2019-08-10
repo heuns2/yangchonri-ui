@@ -4,7 +4,7 @@ class About extends React.Component {
     render(){
         return (
             <div>
-                <div>aaa</div>
+                <div>aaabbbbbb</div>
             </div>
         );
     }

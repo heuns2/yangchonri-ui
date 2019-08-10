@@ -18,8 +18,11 @@ class Header extends React.Component {
                     <div className="collapse navbar-collapse" id="ftco-nav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item active"><Link to="/">Home</Link></li>
-                            <li className="nav-item"><Link to="/about">About</Link></li>
-                            <li className="nav-item"><Link to="/project">Products</Link></li>
+                            <li className="nav-item"><Link to="/about">소개</Link></li>
+                            <li className="nav-item"><Link to="/product">상품</Link></li>
+
+                            <li className="nav-item"><Link to="/login">로그인</Link></li>
+                            <li className="nav-item"><Link to="/mypage">마이페이지</Link></li>
                         </ul>
                     </div>
                 </div>
