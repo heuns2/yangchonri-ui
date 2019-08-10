@@ -25,7 +25,7 @@ export default class Header extends React.Component {
         return (
             <Container className="dr-example-container">
                 <Row>
-                    <Col lag={{ size: 8, order: 2, offset: 2 }}>
+                    <Col lg={{ size: 12, order: 1, offset: 1 }}>
                         <Navbar type="light" className="center" expand="md">
                             <NavbarBrand href="/" style={logo}></NavbarBrand>
                             <Collapse navbar>
