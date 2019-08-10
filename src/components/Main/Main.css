@@ -1,0 +1,7 @@
+.video-wrapper {
+    min-height: 225px;
+    background-color:#000;
+}
+.video-wrapper > div {
+    margin: 0 auto;
+}

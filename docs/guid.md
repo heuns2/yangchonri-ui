@@ -187,3 +187,21 @@ $ yarn add @fortawesome/free-solid-svg-icons
 $ yarn add @fortawesome/react-native-fontawesome
 ````
 
+
+
+## React-Video 
+
+````
+$ yarn add react-player
+````
+
+
+
+## React-Image-Slider
+
+[Link](https://www.npmjs.com/package/react-slideshow-image)
+
+````
+$ yarn add react-slideshow-image
+````
+
