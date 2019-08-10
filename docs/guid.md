@@ -63,7 +63,7 @@ Create React App으로 Project를 만들게 되면 나의 Project를 진행할 �
     - yarn.lock
     - .env
 ````
-    
+
 ## NODE PATH 적용
 위에 index.js파일을 살펴보자. App파일을 불러오는데, 상대경로를 사용하여 파일을 불러오는 중이다. Director구조가 조금만 복잡해지면 다른 파일들을 import할 때 굉장히 번거로워진다. 이를 해결하기 위해 Node Path를 적용시켜 절대경로를 사용하면, 프로젝트를 진행하기 수월해진다. 이를 적용하는 것은 간단하다.
 
@@ -175,3 +175,15 @@ package.json을 확인하면 추가된 것을 확인할 수 있다.
 ````
 $ yarn add redux react-redux
 ````
+
+
+
+## UI-Component Shards-React
+
+````
+$ yarn add shareds-react
+$ yarn add @fortawesome/fontawesome-svg-core
+$ yarn add @fortawesome/free-solid-svg-icons
+$ yarn add @fortawesome/react-native-fontawesome
+````
+

@@ -1,34 +1,49 @@
 import React from "react";
-import "./Header.css";
 import { Link } from "react-router-dom";
 import LOGO from "assets/images/logo3.png";
+import "./Header.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-class Header extends React.Component {
+
+import {
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    InputGroup,
+    InputGroupAddon,
+    InputGroupText,
+    FormInput,
+    Collapse
+} from "shards-react";
+
+
+export default class Header extends React.Component {
     render(){
         const logo = {
             backgroundImage: `url(${LOGO})`,
-            backgroundSize: 150,
-            width: 306,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 121,
+            width: 150,
+            height: 35
         };
+
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-                <div className="container">
-                    <li style={logo}><Link to="/"></Link></li>
+            <Navbar type="light" className="center" expand="md">
+                <NavbarBrand href="/" style={logo}></NavbarBrand>
+                <Collapse navbar>
+                    <Nav navbar className="ml-auto">
+                        <NavItem><NavLink active href="/">HOME</NavLink></NavItem>
+                        <NavItem><NavLink active href="/about">소개</NavLink></NavItem>
+                        <NavItem><NavLink active href="/product">상품</NavLink></NavItem>
+                        <NavItem><NavLink active href="/login">로그인</NavLink></NavItem>
+                        <NavItem><NavLink active href="/myPage">마이페이지</NavLink></NavItem>
+                    </Nav>
 
-                    <div className="collapse navbar-collapse" id="ftco-nav">
-                        <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active"><Link to="/">Home</Link></li>
-                            <li className="nav-item"><Link to="/about">소개</Link></li>
-                            <li className="nav-item"><Link to="/product">상품</Link></li>
-
-                            <li className="nav-item"><Link to="/login">로그인</Link></li>
-                            <li className="nav-item"><Link to="/mypage">마이페이지</Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+                </Collapse>
+            </Navbar>
         );
     }
 }
-
-export default Header;
