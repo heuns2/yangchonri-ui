@@ -1,6 +1,4 @@
 import React from "react";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 import "./Header.css";
@@ -15,10 +13,6 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    InputGroup,
-    InputGroupAddon,
-    InputGroupText,
-    FormInput,
     NavLink,
     Collapse,
 } from "shards-react";
@@ -49,8 +43,8 @@ export default class Header extends React.Component {
         const logo = {
             backgroundImage: `url(${LOGO})`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 230,
-            width: 240,
+            backgroundSize: 220,
+            width: 250,
             height: 65
         };
 
@@ -74,7 +68,7 @@ export default class Header extends React.Component {
                             </DropdownMenu>
                         </Dropdown>
                         <NavItem><NavLink active href="/login">로그인</NavLink></NavItem>
-                        <NavItem><NavLink active href="/login">회원가입</NavLink></NavItem>
+                        <NavItem><NavLink active href="/signUp">회원가입</NavLink></NavItem>
 
                     </Nav>
                 </Collapse>

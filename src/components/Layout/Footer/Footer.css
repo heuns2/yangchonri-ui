@@ -1,0 +1,54 @@
+.page-footer {
+    border-top: 1px solid rgb(234, 234, 234);
+    padding-top:20px;
+}
+.special-color-white {
+    background-color:#fff!important
+}
+.container-fluid {
+    padding:10px 35px !important;
+}
+footer.page-footer .footer-copyright{
+    overflow: hidden;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+}
+
+.tit {
+    padding-top: 4px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #333;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    margin-bottom:0px;
+}
+
+.custom-center_box > h5 {
+    display:inline-block;
+    border:1px solid rgba(6, 0, 3, 0.84);
+    padding:10px 15px;
+    font-size:14px;
+    width: 10%;
+    text-align:center;
+}
+.custom-center_box > ul {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin-top: 4px;
+}
+.custom-center_box > ul > li {
+    list-style-type: none;
+}
+.nav-list {
+    color: gray;
+    font-size:14px;
+}
+.nav-list a {
+    color: gray;
+}
+.company-info {
+    font-size:13px;
+}

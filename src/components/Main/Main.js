@@ -4,7 +4,6 @@ import { Fade } from 'react-slideshow-image';
 import './Main.css';
 import {
     Card,
-    CardHeader,
     CardTitle,
     CardImg,
     CardBody,
@@ -16,20 +15,18 @@ import {
 } from "shards-react";
 
 
-const slideImages = [
-   '/images/bg_1.jpg',
+const topSlideImages = [
+    '/images/bg_1.jpg',
     '/images/bg_2.jpg',
     '/images/bg_3.jpg'
 ];
 
+
 const fadeProperties = {
     duration: 5000,
     transitionDuration: 500,
-    infinite: true,
-    indicators: true,
-    onChange: (oldIndex, newIndex) => {
-        console.log(`fade transition from ${oldIndex} to ${newIndex}`);
-    }
+    infinite: false,
+    indicators: true
 };
 
 export default class Main extends React.Component {
@@ -42,17 +39,17 @@ export default class Main extends React.Component {
                         <Fade {...fadeProperties}>
                             <div className="each-fade">
                                 <div className="image-container">
-                                    <img src={slideImages[0]} />
+                                    <img src={topSlideImages[0]} />
                                 </div>
                             </div>
                             <div className="each-fade">
                                 <div className="image-container">
-                                    <img src={slideImages[1]} />
+                                    <img src={topSlideImages[1]} />
                                 </div>
                             </div>
                             <div className="each-fade">
                                 <div className="image-container">
-                                    <img src={slideImages[2]} />
+                                    <img src={topSlideImages[2]} />
                                 </div>
                             </div>
                         </Fade>
@@ -69,7 +66,6 @@ export default class Main extends React.Component {
                                         <p>Lorem ipsum dolor sit amet.</p>
                                         <Button>Read more &rarr;</Button>
                                     </CardBody>
-                                    <CardFooter>Card footer</CardFooter>
                                 </Card>
                             </Col>
                             <Col>
@@ -80,7 +76,6 @@ export default class Main extends React.Component {
                                         <p>Lorem ipsum dolor sit amet.</p>
                                         <Button>Read more &rarr;</Button>
                                     </CardBody>
-                                    <CardFooter>Card footer</CardFooter>
                                 </Card>
                             </Col>
                             <Col>
@@ -91,7 +86,6 @@ export default class Main extends React.Component {
                                         <p>Lorem ipsum dolor sit amet.</p>
                                         <Button>Read more &rarr;</Button>
                                     </CardBody>
-                                    <CardFooter>Card footer</CardFooter>
                                 </Card>
                             </Col>
                         </Row>
@@ -108,6 +102,17 @@ export default class Main extends React.Component {
                             height={500}
                         />
                     </div>
+                </section>
+                <section>
+                    <Container className="mt40 mb40">
+                        <Row>
+                            <Col>
+                                <div className="banner-image">
+                                    <img src="/images/samples/pc_img_1557384929.png" />
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </section>
             </main>
         );

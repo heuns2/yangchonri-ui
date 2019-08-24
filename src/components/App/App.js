@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, Switch, Route } from 'react-router';
 
-import Header  from 'components/Nav/Header';
+import Header  from 'components/Layout/Nav/Header';
+import Footer  from 'components/Layout/Footer/Footer';
 import Main  from 'components/Main/Main';
 import About  from 'components/About/About';
 import Product  from 'components/Product/Product';
@@ -11,7 +12,8 @@ import './App.css';
 
 const App = props => [
     <Header key={1} />,
-    <Routes key={2} />
+    <Routes key={2} />,
+    <Footer key={3} />
 ];
 
 const Routes = props => (

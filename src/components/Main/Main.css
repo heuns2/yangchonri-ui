@@ -60,3 +60,8 @@ h3 {
 .video-wrapper > div {
     margin: 0 auto;
 }
+
+/* ********************* Section 4 ****************************/
+.banner-image > img {
+    width:100%;
+}
