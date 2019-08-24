@@ -1,7 +1,7 @@
 import React from "react";
 import './About.css';
 import "assets/css/Bootstrap-grid.css";
-import * as serviceWorker from './serviceWorker';
+
 
 const aboutImages = [
     '/images/about_main.jpg',
@@ -9,20 +9,9 @@ const aboutImages = [
  ];
  
 
- ReactDOM.render(
-    <BrowserRouter>
-        <RenderAfterNavermapsLoaded ncpClientId='7fsdkjz4mn'>
-            <App />
-        </RenderAfterNavermapsLoaded>
-    </BrowserRouter>, 
-    document.getElementById('root'));
-
-    serviceWorker.unregister();
+ 
     
 class About extends React.Component {
-
-
-  
     render(){
         let about_top = { 
             backgroundColor:'aqua', 
