@@ -2,7 +2,18 @@ import React from "react";
 import ReactPlayer from 'react-player';
 import { Fade } from 'react-slideshow-image';
 import './Main.css';
-import {Col, Container, Row} from "shards-react";
+import {
+    Card,
+    CardHeader,
+    CardTitle,
+    CardImg,
+    CardBody,
+    CardFooter,
+    Button,
+    Col,
+    Container,
+    Row
+} from "shards-react";
 
 
 const slideImages = [
@@ -27,49 +38,77 @@ export default class Main extends React.Component {
         return (
             <main>
                 <section>
-                    <div className="video-wrapper">
+                    <div className="slide-container">
+                        <Fade {...fadeProperties}>
+                            <div className="each-fade">
+                                <div className="image-container">
+                                    <img src={slideImages[0]} />
+                                </div>
+                            </div>
+                            <div className="each-fade">
+                                <div className="image-container">
+                                    <img src={slideImages[1]} />
+                                </div>
+                            </div>
+                            <div className="each-fade">
+                                <div className="image-container">
+                                    <img src={slideImages[2]} />
+                                </div>
+                            </div>
+                        </Fade>
+                    </div>
+                </section>
+                <section>
+                    <Container className="mt40">
+                        <Row>
+                            <Col>
+                                <Card style={{ minWidth: "300px" }}>
+                                    <CardImg className="card-img" src={"/images/products/products01.png"} />
+                                    <CardBody>
+                                        <CardTitle>Lorem Ipsum</CardTitle>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <Button>Read more &rarr;</Button>
+                                    </CardBody>
+                                    <CardFooter>Card footer</CardFooter>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card style={{ minWidth: "300px" }}>
+                                    <CardImg className="card-img" src="/images/products/products02.png" />
+                                    <CardBody>
+                                        <CardTitle>Lorem Ipsum</CardTitle>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <Button>Read more &rarr;</Button>
+                                    </CardBody>
+                                    <CardFooter>Card footer</CardFooter>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card style={{ minWidth: "300px" }}>
+                                    <CardImg className="card-img" src="/images/products/products03.png" />
+                                    <CardBody>
+                                        <CardTitle>Lorem Ipsum</CardTitle>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <Button>Read more &rarr;</Button>
+                                    </CardBody>
+                                    <CardFooter>Card footer</CardFooter>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                <section>
+                    <div className="video-wrapper mt40">
                         <ReactPlayer
                             playsInline
                             ref='player'
                             url='https://www.youtube.com/watch?v=iByCYgR9aE8'
                             playing
-                            fluid={false}
                             width={900}
                             height={500}
                         />
                     </div>
                 </section>
-                <section>
-                    <Container className="dr-example-container">
-                        <Row>
-                            <Col>
-                                    <div className="slide-container">
-                                        <Fade {...fadeProperties}>
-                                            <div className="each-fade">
-                                                <div className="image-container">
-                                                    <img src={slideImages[0]} />
-                                                </div>
-                                                <h2>First Slide</h2>
-                                            </div>
-                                            <div className="each-fade">
-                                                <div className="image-container">
-                                                    <img src={slideImages[1]} />
-                                                </div>
-                                                <h2>Second Slide</h2>
-                                            </div>
-                                            <div className="each-fade">
-                                                <div className="image-container">
-                                                    <img src={slideImages[2]} />
-                                                </div>
-                                                <h2>Third Slide</h2>
-                                            </div>
-                                        </Fade>
-                                    </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </section>
-
             </main>
         );
     }

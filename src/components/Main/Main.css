@@ -1,14 +1,9 @@
-.video-wrapper {
-    min-height: 225px;
-    background-color:#000;
-}
-.video-wrapper > div {
-    margin: 0 auto;
-}
 
+
+/* ********************* Section 1 ****************************/
 /* Image Sliders */
 .slide-container {
-    width: 70%;
+    width: 100%;
     margin: auto; }
 
 h3 {
@@ -34,13 +29,12 @@ h3 {
 }
 
 .each-fade .image-container {
-    width: 75%;
+    width: 100%;
     overflow: hidden;
 }
 
 .each-fade .image-container img {
     width: 100%;
-    height: 500px;
 }
 
 .each-fade h2 {
@@ -50,4 +44,19 @@ h3 {
     align-items: center;
     margin: 0;
     background: #adceed;
+}
+/* ********************* Section 2 ****************************/
+.card-img {
+    /*width:350px;*/
+    height:350px;
+}
+
+/* ********************* Section 3 ****************************/
+/*Video Player*/
+.video-wrapper {
+    min-height: 225px;
+    background-color:#000;
+}
+.video-wrapper > div {
+    margin: 0 auto;
 }

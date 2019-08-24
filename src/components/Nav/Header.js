@@ -1,47 +1,84 @@
 import React from "react";
-import LOGO from "assets/images/logo3.png";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "shards-ui/dist/css/shards.min.css"
 import "./Header.css";
+import LOGO from "assets/images/logo3.png";
 
 import {
     Navbar,
     NavbarBrand,
     Nav,
     NavItem,
+    Dropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    InputGroup,
+    InputGroupAddon,
+    InputGroupText,
+    FormInput,
     NavLink,
-    Collapse, Container, Row, Col
+    Collapse,
 } from "shards-react";
 
 
 export default class Header extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.toggleDropdown = this.toggleDropdown.bind(this);
+
+        this.state = {
+            dropdownOpen: false
+        };
+    }
+
+    toggleDropdown() {
+        this.setState({
+            ...this.state,
+            ...{
+                dropdownOpen: !this.state.dropdownOpen
+            }
+        });
+    }
+
+
     render(){
         const logo = {
             backgroundImage: `url(${LOGO})`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 121,
-            width: 150,
-            height: 35
+            backgroundSize: 230,
+            width: 240,
+            height: 65
         };
 
         return (
-            <Container className="dr-example-container">
-                <Row>
-                    <Col lg={{ size: 12, order: 1, offset: 1 }}>
-                        <Navbar type="light" className="center" expand="md">
-                            <NavbarBrand href="/" style={logo}></NavbarBrand>
-                            <Collapse navbar>
-                                <Nav navbar className="ml-auto">
-                                    <NavItem><NavLink active href="/">HOME</NavLink></NavItem>
-                                    <NavItem><NavLink active href="/about">소개</NavLink></NavItem>
-                                    <NavItem><NavLink active href="/product">상품</NavLink></NavItem>
-                                    <NavItem><NavLink active href="/login">로그인</NavLink></NavItem>
-                                    <NavItem><NavLink active href="/myPage">마이페이지</NavLink></NavItem>
-                                </Nav>
+            <Navbar type="light" theme="" expand="md">
+                <NavbarBrand href="/" style={logo}></NavbarBrand>
+                <Collapse navbar>
+                    <Nav navbar className="nav-bolder">
+                        <NavItem><NavLink active href="/">HOME</NavLink></NavItem>
+                        <NavItem><NavLink active href="/about">소개</NavLink></NavItem>
+                        <NavItem><NavLink active href="/product">상품</NavLink></NavItem>
+                    </Nav>
 
-                            </Collapse>
-                        </Navbar>
-                    </Col>
-                </Row>
-            </Container>
+                    <Nav navbar className="ml-auto">
+                        <Dropdown  open={this.state.dropdownOpen} toggle={this.toggleDropdown} >
+                            <DropdownToggle nav caret>고객센터</DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem>공지사항</DropdownItem>
+                                <DropdownItem>자주하는 질문</DropdownItem>
+                                <DropdownItem>1:1 문의</DropdownItem>
+                            </DropdownMenu>
+                        </Dropdown>
+                        <NavItem><NavLink active href="/login">로그인</NavLink></NavItem>
+                        <NavItem><NavLink active href="/login">회원가입</NavLink></NavItem>
+
+                    </Nav>
+                </Collapse>
+            </Navbar>
 
         );
     }

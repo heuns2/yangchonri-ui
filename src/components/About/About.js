@@ -1,6 +1,5 @@
 import React from "react";
 import './About.css';
-import "assets/css/Style.css";
 import "assets/css/Bootstrap-grid.css";
 import ABOUT_MAIN from "assets/images/about_main.jpg";
 

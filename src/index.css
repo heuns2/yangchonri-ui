@@ -1,14 +1,10 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Noto Sans KR", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-div {
-  font-family: 'Noto Sans KR' !important;
 }
 
 
@@ -17,3 +13,9 @@ code {
     monospace;
 }
 
+
+/* ********************* Common ****************************/
+.mt10 { margin-top:10px; }
+.mt20 { margin-top:20px; }
+.mt30 { margin-top:30px; }
+.mt40 { margin-top:40px; }

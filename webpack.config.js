@@ -9,7 +9,18 @@ module.exports = {
 
 resolve: {
   modules: [
-    path.join(__dirname, "src"),
-    "node_modules"
+      {
+          module: {
+              rules: [
+                  {
+                      test: /\.css$/,
+                      use: [
+                          { loader: "style-loader" },
+                          { loader: "css-loader" }
+                      ]
+                  }
+              ]
+          }
+      }
   ]
 }
