@@ -1,6 +1,5 @@
 import React from "react";
 
-import {Container, Row, Col, NavLink, NavItem} from "shards-react";
 import "./Footer.css";
 
 export default class Header extends React.Component {

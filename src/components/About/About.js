@@ -1,8 +1,37 @@
-import React from "react";
+import React from 'react';
 import './About.css';
 import "assets/css/Bootstrap-grid.css";
 
 class About extends React.Component {
+
+    componentDidMount() {
+        this.renderMap();
+    }
+
+    renderMap = () => {
+        this.loadScript("//dapi.kakao.com/v2/maps/sdk.js?appkey=135426590942b64691be51d5ec6a8d4a");
+        window.initMap = this.initMap;
+    };
+
+
+    loadScript = (url) => {
+        const index = window.document.getElementsByTagName("script")[0];
+        const script = window.document.createElement("script");
+        script.src = url;
+        script.async = true;
+        script.defer = true;
+        index.parentNode.insertBefore(script, index);
+    };
+
+
+    initMap = () => {
+        console.log("11111");
+        let el = document.getElementById('map');
+        let map = new window.kakao.maps.Map(el, {
+            center : new window.kakao.maps.Lating(33.450701, 126.570667)
+        });
+
+    };
 
     render(){
         return (
@@ -69,11 +98,12 @@ class About extends React.Component {
                                     <p className="mb-md-5">
                                         <strong>주소:  </strong>경기도 파주시 야당동 920, 야당 교회 앞 <br />
                                         <strong>연락처:</strong> 031-943-0377 <br />
-                                        <strong>영업시간: </strong> 10:00 ~ 23:00</p>
+                                        <strong>영업시간: </strong> 10:00 ~ 23:00
+                                    </p>
                                 </div>
-                                <div>
-                                    <React.Fragment>
-                                    </React.Fragment>
+                                <div className="App">
+                                    <h1>Google Maps in React App</h1>
+                                    <div id="map"></div>
                                 </div>
                             </div>
                         </div>
