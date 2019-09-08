@@ -68,8 +68,8 @@ export default class Header extends React.Component {
                                     <DropdownToggle nav caret>고객센터</DropdownToggle>
                                     <DropdownMenu className="dropdown_menu">
                                         <DropdownItem><a href="/notice">공지사항</a></DropdownItem>
-                                        <DropdownItem><a href="/product">자주하는 질문</a></DropdownItem>
-                                        <DropdownItem><a href="/product">1:1 문의</a></DropdownItem>
+                                        <DropdownItem><a href="/feq">자주하는 질문</a></DropdownItem>
+                                        <DropdownItem><a href="/mypage_qna">1:1 문의</a></DropdownItem>
                                     </DropdownMenu>
                                 </Dropdown>
                                 <NavItem><NavLink active href="/login">로그인</NavLink></NavItem>
