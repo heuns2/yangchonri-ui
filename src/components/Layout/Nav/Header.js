@@ -49,7 +49,7 @@ export default class Header extends React.Component {
         };
 
         return (
-            <Navbar type="light" theme="" expand="md">
+            <Navbar type="light" theme="" expand="md" className="navbar_border">
                 <NavbarBrand href="/" style={logo}></NavbarBrand>
                 <Collapse navbar>
                     <Nav navbar className="nav-bolder">
@@ -61,10 +61,10 @@ export default class Header extends React.Component {
                     <Nav navbar className="ml-auto">
                         <Dropdown  open={this.state.dropdownOpen} toggle={this.toggleDropdown} >
                             <DropdownToggle nav caret>고객센터</DropdownToggle>
-                            <DropdownMenu>
-                                <DropdownItem>공지사항</DropdownItem>
-                                <DropdownItem>자주하는 질문</DropdownItem>
-                                <DropdownItem>1:1 문의</DropdownItem>
+                            <DropdownMenu className="dropdown_menu">
+                                <DropdownItem><a href="/notice">공지사항</a></DropdownItem>
+                                <DropdownItem><a href="/product">자주하는 질문</a></DropdownItem>
+                                <DropdownItem><a href="/product">1:1 문의</a></DropdownItem>
                             </DropdownMenu>
                         </Dropdown>
                         <NavItem><NavLink active href="/login">로그인</NavLink></NavItem>

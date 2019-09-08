@@ -26,3 +26,9 @@ code {
 
 .w-40 {width: 30% !important;}
 .w-60 {width: 70% !important;}
+
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+
+.p5 { padding: 5px; }

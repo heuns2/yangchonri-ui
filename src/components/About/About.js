@@ -25,12 +25,10 @@ class About extends React.Component {
 
 
     initMap = () => {
-        console.log("11111");
         let el = document.getElementById('map');
-        let map = new window.kakao.maps.Map(el, {
+        new window.kakao.maps.Map(el, {
             center : new window.kakao.maps.Lating(33.450701, 126.570667)
         });
-
     };
 
     render(){
