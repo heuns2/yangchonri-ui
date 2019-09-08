@@ -3,3 +3,18 @@
     font-weight: 600;
     margin-bottom:25px;
 }
+
+.MuiTable-stickyHeader{
+    border-top: 2px solid salmon;
+    margin-top: 20px;
+}
+.title{
+    display: inline-block;
+    padding-right: 20px;
+}
+.tableTitle {
+    font-weight: 600 !important;
+}
+.titleDesc {
+    font-size:12px;
+}

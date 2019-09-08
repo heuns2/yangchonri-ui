@@ -1,4 +1,5 @@
 import React from "react";
+import { Breadcrumb, BreadcrumbItem} from "shards-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 import "./Header.css";
@@ -49,30 +50,46 @@ export default class Header extends React.Component {
         };
 
         return (
-            <Navbar type="light" theme="" expand="md" className="navbar_border">
-                <NavbarBrand href="/" style={logo}></NavbarBrand>
-                <Collapse navbar>
-                    <Nav navbar className="nav-bolder">
-                        <NavItem><NavLink active href="/">HOME</NavLink></NavItem>
-                        <NavItem><NavLink active href="/about">소개</NavLink></NavItem>
-                        <NavItem><NavLink active href="/product">상품</NavLink></NavItem>
-                    </Nav>
+            <main>
+                <section>
+                    <Navbar type="light" theme="" expand="md" className="navbar_border">
+                        <NavbarBrand href="/" style={logo}></NavbarBrand>
+                        <Collapse navbar>
+                            <Nav navbar className="nav-bolder">
+                                <NavItem><NavLink active href="/">HOME</NavLink></NavItem>
+                                <NavItem><NavLink active href="/about">소개</NavLink></NavItem>
+                                <NavItem><NavLink active href="/product">상품</NavLink></NavItem>
+                            </Nav>
 
-                    <Nav navbar className="ml-auto">
-                        <Dropdown  open={this.state.dropdownOpen} toggle={this.toggleDropdown} >
-                            <DropdownToggle nav caret>고객센터</DropdownToggle>
-                            <DropdownMenu className="dropdown_menu">
-                                <DropdownItem><a href="/notice">공지사항</a></DropdownItem>
-                                <DropdownItem><a href="/product">자주하는 질문</a></DropdownItem>
-                                <DropdownItem><a href="/product">1:1 문의</a></DropdownItem>
-                            </DropdownMenu>
-                        </Dropdown>
-                        <NavItem><NavLink active href="/login">로그인</NavLink></NavItem>
-                        <NavItem><NavLink active href="/signUp">회원가입</NavLink></NavItem>
+                            <Nav navbar className="ml-auto">
+                                <Dropdown  open={this.state.dropdownOpen} toggle={this.toggleDropdown} >
+                                    <DropdownToggle nav caret>고객센터</DropdownToggle>
+                                    <DropdownMenu className="dropdown_menu">
+                                        <DropdownItem><a href="/notice">공지사항</a></DropdownItem>
+                                        <DropdownItem><a href="/product">자주하는 질문</a></DropdownItem>
+                                        <DropdownItem><a href="/product">1:1 문의</a></DropdownItem>
+                                    </DropdownMenu>
+                                </Dropdown>
+                                <NavItem><NavLink active href="/login">로그인</NavLink></NavItem>
+                                <NavItem><NavLink active href="/signUp">회원가입</NavLink></NavItem>
 
-                    </Nav>
-                </Collapse>
-            </Navbar>
+                            </Nav>
+                        </Collapse>
+                    </Navbar>
+
+                </section>
+                <section>
+                    <Breadcrumb className="text-right">
+                        <BreadcrumbItem>
+                            <a href="#">Home</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem active>Library</BreadcrumbItem>
+                    </Breadcrumb>
+                </section>
+
+            </main>
+        
+            
 
         );
     }

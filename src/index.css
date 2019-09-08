@@ -32,3 +32,11 @@ code {
 .text-center { text-align: center; }
 
 .p5 { padding: 5px; }
+
+
+/************************** Breadcrumb ********************************/
+.breadcrumb {
+  flex-direction: row;
+  justify-content: flex-end; 
+  font-size:12px;
+}
