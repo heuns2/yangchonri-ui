@@ -1,5 +1,8 @@
+
+
 .customer_nav .nav-item {
     border-bottom: 1px solid #C7CED5;
+    padding: 7px 0;
 }
 .customer_nav .nav-item:last-child{
     border-bottom: none;
@@ -14,8 +17,30 @@
     background: url('/images/arrow-right.png') no-repeat 90%;
     background-size:12px;
 }
-.customer_nav .nav-link.active{
+.customer_nav .nav-item.active{
     background-color: #ffe3e3;
     color: #c92a2a;
     font-weight: bold;
+}
+
+/**공통 -**/
+.notice_header {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+
+.MuiTable-stickyHeader{
+    border-top: 2px solid #c92a2a;
+    margin-top: 20px;
+}
+.title{
+    display: inline-block;
+    padding-right: 20px;
+}
+.tableTitle {
+    font-weight: 600 !important;
+}
+.titleDesc {
+    font-size:12px;
 }

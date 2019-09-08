@@ -1,6 +1,9 @@
 .page-footer {
     border-top: 1px solid rgb(234, 234, 234);
     padding-top:20px;
+    position: relative;
+    bottom: 0px;
+    width:100%;
 }
 .special-color-white {
     background-color:#fff!important

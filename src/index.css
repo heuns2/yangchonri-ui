@@ -39,4 +39,13 @@ code {
   flex-direction: row;
   justify-content: flex-end; 
   font-size:12px;
+  background-color: rgba(182, 191, 202, 0.08) !important;
+  border-radius: .25rem;
+  border: 1px solid rgb(234, 234, 234, 0.3);
+}
+.breadcrumb .breadcrumb-item a {
+  color: #6c757d;
+}
+.breadcrumb .breadcrumb-item .active{
+  color: #c92a2a !important;
 }

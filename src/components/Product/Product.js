@@ -1,4 +1,5 @@
 import React from "react";
+import { Breadcrumb, BreadcrumbItem } from "shards-react";
 import './Product.css';
 
 class Product extends React.Component {
@@ -6,6 +7,14 @@ class Product extends React.Component {
         return (
             <main>
                 <section>
+                    <div>
+                        <Breadcrumb className="text-right">
+                            <BreadcrumbItem>
+                                <a href="#">Home</a>
+                            </BreadcrumbItem>
+                            <BreadcrumbItem active>공지사항</BreadcrumbItem>
+                        </Breadcrumb>
+                    </div>
                     <div style={{backgroundImage: `url('/images/samples/intro_main_v2.png')`}} className="about-top"></div>
                 </section>
                 <section className="ftco-section mt40 mb40">

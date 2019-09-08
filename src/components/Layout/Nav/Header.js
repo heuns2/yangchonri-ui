@@ -17,11 +17,14 @@ import {
     NavLink,
     Collapse,
 } from "shards-react";
+import { roundToNearestMinutes } from "date-fns/esm";
 
 
 export default class Header extends React.Component {
     constructor(props) {
         super(props);
+
+        console.log(props);
 
         this.toggleDropdown = this.toggleDropdown.bind(this);
 
@@ -50,7 +53,6 @@ export default class Header extends React.Component {
         };
 
         return (
-            <main>
                 <section>
                     <Navbar type="light" theme="" expand="md" className="navbar_border">
                         <NavbarBrand href="/" style={logo}></NavbarBrand>
@@ -76,21 +78,20 @@ export default class Header extends React.Component {
                             </Nav>
                         </Collapse>
                     </Navbar>
-
                 </section>
-                <section>
-                    <Breadcrumb className="text-right">
-                        <BreadcrumbItem>
-                            <a href="#">Home</a>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem active>Library</BreadcrumbItem>
-                    </Breadcrumb>
+               /* {</section>
+                {
+                    this.path !== '' && 
+                        <Breadcrumb className="text-right" if>
+                            <BreadcrumbItem>
+                                <a href="/">Home</a>
+                            </BreadcrumbItem>
+                            <BreadcrumbItem active>Library</BreadcrumbItem>
+                        </Breadcrumb>
+                    
+                }
                 </section>
-
-            </main>
-        
-            
-
+             } */
         );
     }
 }

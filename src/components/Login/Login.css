@@ -1,12 +1,15 @@
 .containerWrap {
     border-top: 1px solid rgb(234, 234, 234);
     width:100%;
+    height: 400px;
     /* height:60%; */
 }
 
 .positioner {
     width: 500px;
-    margin: 30px auto;
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
 }
 
 .login-header {

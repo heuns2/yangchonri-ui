@@ -4,7 +4,7 @@ export default class MyPageQna extends React.Component {
     render(){
         return (
             <div>
-                <div>mypage</div>
+                <div>qna</div>
             </div>
         );
     }
