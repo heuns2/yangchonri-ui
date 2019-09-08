@@ -73,9 +73,6 @@ export default class ServiceFeq extends React.Component {
                                                 <TableCell align="center">{row.id}</TableCell>
                                                 <TableCell align="center">{row.calories}</TableCell>
                                                 <TableCell align="left">{row.title}</TableCell>
-                                                <TableCell align="center">{row.createdUser}</TableCell>
-                                                <TableCell align="center">{row.created}</TableCell>
-                                                <TableCell align="center">{row.counts}</TableCell>
                                             </TableRow>
                                          ))}
                                     </TableBody>
