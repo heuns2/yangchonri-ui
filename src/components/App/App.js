@@ -9,7 +9,6 @@ import Product       from 'components/Product/Product';
 import ProductDetail from 'components/Product/ProductDetail/ProductDetail';
 import Login         from 'components/Login/Login';
 import SignUp        from 'components/SignUp/SignUp';
-import MyPage        from 'components/Mypage/MyPage';
 import Notice        from 'components/CustomerCenter/Notice/Notice';
 import ServiceFeq    from 'components/CustomerCenter/ServiceFeq/ServiceFeq';
 import MyPageQna     from 'components/Mypage/Qna/MyPageQna';
@@ -34,7 +33,7 @@ const Routes = props => (
             <Route exact path="/product" component={Product} />
                 <Route exact path="/product_detail" component={ProductDetail} />
             
-            <Route exact path="/mypage" component={MyPage} />
+            {/* <Route exact path="/mypage" component={MyPage} /> */}
             <Route exact path="/notice" component={Notice} />
                 <Route exact path="/feq" component={ServiceFeq} />
                 <Route exact path="/mypage_qna" component={MyPageQna} />

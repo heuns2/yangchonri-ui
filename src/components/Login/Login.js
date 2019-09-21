@@ -56,7 +56,7 @@ export default class Product extends React.Component {
                             <Button2 className="w-50">네이버 로그인</Button2>
                         </Form>
                         <JoinContent className="join_wrap">
-                            <span className="p5 join"><a href="/">아이디 찾기</a></span>
+                            <span className="p5 join"><a href="/api/test">아이디 찾기</a></span>
                             <span className="p5 join"><a href="/">비밀번호 찾기</a></span>
                             <span className="p5 join"><a href="/">회원가입</a></span>
                         </JoinContent>
