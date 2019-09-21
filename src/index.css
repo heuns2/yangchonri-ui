@@ -23,8 +23,10 @@ code {
 .mb20 { margin-bottom:20px; }
 .mb30 { margin-bottom:30px; }
 .mb40 { margin-bottom:40px; }
+.ml10 { margin-left: 10px; }
 
-.w-40 {width: 30% !important;}
+.w-30 {width: 30% !important;}
+.w-40 {width: 40% !important;}
 .w-60 {width: 70% !important;}
 
 .text-right { text-align: right; }
@@ -33,6 +35,17 @@ code {
 
 .p5 { padding: 5px; }
 
+.btn {
+  font-family: 'monospace', 'sans-serif' !important;
+  font-weight: 500 !important;
+}
+
+.color-secondary {
+  color: #5a6169;
+}
+.color-info {
+  color: #00b8d8;
+}
 
 /************************** Breadcrumb ********************************/
 .breadcrumb {

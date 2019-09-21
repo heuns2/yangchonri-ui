@@ -1,0 +1,13 @@
+tr.MuiTableRow-root{
+    height: 48px !important;
+}
+
+th.MuiTableCell-root {
+    width:30%;
+}
+.product_total {
+    text-align: left;
+}
+.product_total h5, .product_total h6{
+    display: inline-block;
+}

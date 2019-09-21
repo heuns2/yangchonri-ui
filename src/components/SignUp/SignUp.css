@@ -1,0 +1,24 @@
+.agree-head {
+    padding-left:0 !important;
+    margin: 10px 0;
+}
+.agree-head .MuiTypography-h6{
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.agree-head .MuiTypography-subtitle2 {
+    display: inline-block;
+    font-size: 0.725rem;
+}
+
+.makeStyles-box-1{
+    margin: 20px 0;
+}
+
+.agree-box{
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+
+}

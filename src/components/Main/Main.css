@@ -48,9 +48,24 @@ h3 {
 /* ********************* Section 2 ****************************/
 .card-img {
     /*width:350px;*/
-    height:350px;
+    height:300px;
 }
-
+.best_list {
+    font-family: 'monospace', 'sans-serif' !important;
+}
+.best_card a, .best_card a:hover, .best_card:visited {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+.title { 
+    padding-bottom: 10px !important;
+}
+.card-footer input {
+    display: inline-block;
+}
+.card-footer  button {
+    margin-left: 10px;
+}
 /* ********************* Section 3 ****************************/
 /*Video Player*/
 .video-wrapper {

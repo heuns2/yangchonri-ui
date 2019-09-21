@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
 export default class ServiceFeq extends React.Component {
     render(){
         return (
-            <div>
+            <section>
                 <Breadcrumb className="text-right">
                     <BreadcrumbItem>
                         <a href="/">Home</a>
@@ -81,7 +81,7 @@ export default class ServiceFeq extends React.Component {
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </section>
         )
     }
 }

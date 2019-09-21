@@ -19,7 +19,7 @@ class Product extends React.Component {
                 </section>
                 <section className="ftco-section mt40 mb40">
                     <div className="container">
-                        <div className="bMHkhi"> Products</div>
+                        <div className="bMHkhi"> 상품 목록</div>
                         <div className="row">
                             <div className="">
                                 <div className="row">
@@ -31,7 +31,7 @@ class Product extends React.Component {
                                                 </a>
                                             </div>
                                             <div className="text px-md-4 px-lg-5 w-60 pt-3">
-                                                <h2><a href="#">Tasty &amp; Delicious Foods</a></h2>
+                                                <h2><a href="/product_detail">Tasty &amp; Delicious Foods</a></h2>
                                                 <p>A small river named Duden flows by their place and supplies
                                                     it with the necessary regelialia. It is a paradisematic
                                                     country, in which roasted parts of sentences fly into your
@@ -48,7 +48,7 @@ class Product extends React.Component {
                                     <div className="col-md-6 col-lg-12">
                                         <div className="blog-entry d-lg-flex">
                                             <div className="w-40">
-                                                <a href="#" className="img d-flex align-items-end" style={{backgroundImage: `url('/images/products/products02.png')`}} >
+                                                <a href="/product_detail" className="img d-flex align-items-end" style={{backgroundImage: `url('/images/products/products02.png')`}} >
                                                     <div className="overlay"></div>
                                                 </a>
                                             </div>
@@ -65,7 +65,7 @@ class Product extends React.Component {
                                     <div className="col-md-6 col-lg-12">
                                         <div className="blog-entry d-lg-flex">
                                             <div className="w-40">
-                                                <a href="#" className="img d-flex align-items-end" style={{backgroundImage: `url('/images/products/products03.png')`}} >
+                                                <a href="/product_detail" className="img d-flex align-items-end" style={{backgroundImage: `url('/images/products/products03.png')`}} >
                                                     <div className="overlay"></div>
                                                 </a>
                                             </div>

@@ -2,17 +2,8 @@ import React from "react";
 import ReactPlayer from 'react-player';
 import { Fade } from 'react-slideshow-image';
 import './Main.css';
-import {
-    Card,
-    CardTitle,
-    CardImg,
-    CardBody,
-    Button,
-    Col,
-    Container,
-    Row
-} from "shards-react";
-
+import { FormInput, Card,  CardTitle, CardImg, CardBody,  CardFooter,  Button,  Col, Container,  Row } from "shards-react";
+import Link from '@material-ui/core/Link';
 
 const topSlideImages = [
     '/images/bg_1.jpg',
@@ -54,37 +45,61 @@ export default class Main extends React.Component {
                         </Fade>
                     </div>
                 </section>
-                <section>
-                    <Container className="mt40">
+                <section className="mt40">
+                    <Container className="best_card">
+                        <div className="bMHkhi ml10 best_list">인기 목록</div>
                         <Row>
                             <Col>
-                                <Card style={{ minWidth: "300px" }}>
-                                    <CardImg className="card-img" src={"/images/products/products01.png"} />
-                                    <CardBody>
-                                        <CardTitle>Lorem Ipsum</CardTitle>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                        <Button>Read more &rarr;</Button>
-                                    </CardBody>
+                                <Card style={{ minWidth: "300px" }} href="/product_detail">
+                                    <Link href="/product_detail">
+                                        <CardImg className="card-img" src={"/images/products/products01.png"} />
+                                    </Link>
+                                    <Link href="/product_detail">
+                                        <CardBody className="title">
+                                            <CardTitle>장어탕</CardTitle>
+                                            <p>국내산 민물장어로 정성스럽게 끓인.</p>
+                                            <h6 className="color-secondary"><b>9,000원</b></h6>
+                                        </CardBody>
+                                    </Link>
+                                    <CardFooter >
+                                        <FormInput size="sm" type="number" className="w-30" />
+                                        <Button size="sm" theme="light">장바구니</Button>
+                                        <Button size="sm" theme="dark">바로구매</Button>
+                                    </CardFooter>
                                 </Card>
                             </Col>
                             <Col>
                                 <Card style={{ minWidth: "300px" }}>
-                                    <CardImg className="card-img" src="/images/products/products02.png" />
-                                    <CardBody>
-                                        <CardTitle>Lorem Ipsum</CardTitle>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                        <Button>Read more &rarr;</Button>
+                                    <Link href="/product_detail">
+                                        <CardImg className="card-img" src={"/images/products/products02.png"} />
+                                    </Link>
+                                    <CardBody className="title">
+                                        <CardTitle >Lorem Ipsum</CardTitle>
+                                        <p>국내산 민물장어로 정성스럽게 끓인.</p>
+                                        <h6 className="color-secondary"><b>9,000원</b></h6>
                                     </CardBody>
+                                    <CardFooter >
+                                        <FormInput size="sm" type="number" className="w-30" />
+                                        <Button size="sm" theme="light">장바구니</Button>
+                                        <Button size="sm" theme="dark">바로구매</Button>
+                                    </CardFooter>
                                 </Card>
                             </Col>
                             <Col>
                                 <Card style={{ minWidth: "300px" }}>
-                                    <CardImg className="card-img" src="/images/products/products03.png" />
-                                    <CardBody>
+                                    <Link href="/product_detail">
+                                        <CardImg className="card-img" src={"/images/products/products03.png"} />
+                                    </Link>
+                                    <CardBody className="title">
                                         <CardTitle>Lorem Ipsum</CardTitle>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                        <Button>Read more &rarr;</Button>
+                                        <p>국내산 민물장어로 정성스럽게 끓인.</p>
+                                        <h6 className="color-secondary"><b>9,000원</b></h6>
                                     </CardBody>
+                                    <CardFooter >
+                                        <FormInput size="sm" type="number" className="w-30" />
+                                        <Button size="sm" theme="light">장바구니</Button>
+                                        <Button size="sm" theme="dark">바로구매</Button>
+                                    </CardFooter>
                                 </Card>
                             </Col>
                         </Row>
